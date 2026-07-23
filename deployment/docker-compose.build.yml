@@ -1,0 +1,6 @@
+services:
+  notify-x-builder:
+    build:
+      context: ../services/notify-x
+      dockerfile: Dockerfile
+    image: notify-x/notifier-service:latest
