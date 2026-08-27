@@ -1,0 +1,21 @@
+services:
+  notify-x:
+    image: notify-x/notifier-service:1.0.0
+    container_name: notify-x
+    environment:
+      - MIX_ENV=prod
+      - SMTP_RELAY=
+      - SMTP_PORT=
+      - SMTP_USERNAME=
+      - SMTP_PASSWORD=
+      - SMTP_FROM_EMAIL=
+      - KAFKA_BROKERS=
+      - KAFKA_TOPIC=
+      - KAFKA_GROUP_ID=
+    restart: unless-stopped
+    networks:
+      - notify-network
+
+networks:
+  notify-network:
+    driver: bridge
