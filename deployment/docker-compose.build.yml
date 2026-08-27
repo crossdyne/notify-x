@@ -3,4 +3,4 @@ services:
     build:
       context: ../services/notifier
       dockerfile: Dockerfile
-    image: notify-x/notifier-service:latest
+    image: notify-x/notifier-service:1.0.0

@@ -1,6 +1,6 @@
 services:
   notify-x:
-    image: notify-x/notifier-service:latest
+    image: notify-x/notifier-service:1.0.0
     container_name: notify-x
     environment:
       - MIX_ENV=prod
